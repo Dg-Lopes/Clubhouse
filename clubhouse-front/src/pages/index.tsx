@@ -9,17 +9,17 @@ export default function Home(): JSX.Element {
 				<h1>🔥 Welcome to Clubhouse</h1>
 				<div className={styles.description}>
 					<p>
-						We're working hard to get Clubhouse ready for everyone! <br/>
-						While we wrap up the finishing touches, we're adding <br /> 
+						We're working hard to get Clubhouse ready for everyone! 
+						While we wrap up the finishing touches, we're adding 
 						people gradually to make sure nothing breaks. :)
 					</p>
 					<br/>
 					<br/>
 					<br/>
 					<p>
-						Anyone can join with an invite from an existing user -- or <br/>
-						reserve your username and we'll text you if you have <br/>
-						a friend on the app who can let you in. We are so grateful <br/>
+						Anyone can join with an invite from an existing user -- or 
+						reserve your username and we'll text you if you have 
+						a friend on the app who can let you in. We are so grateful 
 						you're here and can't wait to have you join us! 🙏
 					</p>
 					<button type="submit">
