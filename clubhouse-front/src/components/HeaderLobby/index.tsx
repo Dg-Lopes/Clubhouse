@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./index.module.scss";
 import {
 	AiOutlineSearch,
@@ -10,7 +11,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 export default function Header(): JSX.Element {
 	return (
 		<div className={styles.container}>
-			<div className={styles.header}>
+			<header className={styles.header}>
 				<button>
 					<AiOutlineSearch size={30}/>
 				</button>
@@ -28,7 +29,75 @@ export default function Header(): JSX.Element {
 						<BsFillPersonFill size={30}/>
 					</button>
 				</nav>
-			</div>
+			</header>
+			<main className={styles.mainContent}>
+				<h1>Rooms</h1>
+				<section className={styles.rooms}>
+					<div className={styles.room}>
+						<div className={styles.admInformation}>
+							<BsFillPersonFill 
+								size={130} 
+								color="white"
+							/>
+							<h3>Eduardo</h3>
+						</div>
+						<div className={styles.roomInformation}>
+							<h2>Just talking</h2>
+							<p>We are just having a good conversation</p>
+							<span>
+								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
+							</span>
+							<Link href="">
+								<button>
+									Enter the room
+								</button>
+							</Link>
+						</div>
+					</div>
+					<div className={styles.room}>
+						<div className={styles.admInformation}>
+							<BsFillPersonFill 
+								size={130} 
+								color="white"
+							/>
+							<h3>Eduardo</h3>
+						</div>
+						<div className={styles.roomInformation}>
+							<h2>Just talking</h2>
+							<p>We are just having a good conversation</p>
+							<span>
+								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
+							</span>
+							<Link href="">
+								<button>
+									Enter the room
+								</button>
+							</Link>
+						</div>
+					</div>
+					<div className={styles.room}>
+						<div className={styles.admInformation}>
+							<BsFillPersonFill 
+								size={130} 
+								color="white"
+							/>
+							<h3>Eduardo</h3>
+						</div>
+						<div className={styles.roomInformation}>
+							<h2>Just talking</h2>
+							<p>We are just having a good conversation</p>
+							<span>
+								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
+							</span>
+							<Link href="">
+								<button>
+									Enter the room
+								</button>
+							</Link>
+						</div>
+					</div>
+				</section>
+			</main>
 		</div>
 	);
 }
