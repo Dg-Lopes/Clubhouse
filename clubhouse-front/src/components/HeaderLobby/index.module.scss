@@ -1,8 +1,6 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  justify-items: center;
   height: 100vh;
   width: 100vw;
 
@@ -10,7 +8,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixad;
     
     padding: 0 1rem;
     width: 100vw;
@@ -45,61 +42,103 @@
   }
   
   .mainContent {
-    background: rgba(0,0,0,0.9);
-    width: 95%;
-    margin: 10px 0;
-    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    width: 95vw;
+    height: 85vh;
     border-radius: 20px;
 
     h1 {
       text-align: center;
     }
 
-    .rooms {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: center;
+    .showAllRooms {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-items: center;
+      overflow-y: scroll;
+      width: 100%;
+      height: 90%;
+      padding: 20px 0 0 0;
 
       .room {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 20rem;
-        height: 28rem;
+        width: 25vw;
+        height: 60vh;
         border-radius: 20px;
-        
-        .admInformation {
-          height: 35%;
-          background: var(--green-light);
-          border-radius: 20px 20px 0 0;
-          text-align: center;
+        -webkit-transition: -webkit-transform .5s ease;
+        transition: transform .5s ease, width 2s, height 2s;
+        margin-bottom: 25px;
 
-          h3 {
-            color: var(--white);
-          }
+        .admInformation {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          background: var(--green-light);
+          height: 40%;
+          border-radius: 20px 20px 0 0;
         }
 
         .roomInformation {
           display: flex;
           flex-direction: column;
           align-items: center;
-          height: 65%;
-          text-align: center;
-          border-radius: 0 0 20px 20px;
+          justify-content: space-evenly;
+
           background: #191E19;
-          color: var(--white);
+
+          height: 60%;
+          border-radius: 0 0 20px 20px;
+          padding: 0 5px;
 
           span {
             display: flex;
-            justify-content: center;
-            font-size: 1.125rem;
+            color: var(--white)
           }
 
           button {
-            width: 50%;
-            height: 12%;
-            border-radius: 10px;
+            height: 5vh;
+            border-radius: 7px;
+            width: 10vw;
+            transition: .4s ease;
+          }
+
+          button:hover {
+            background: var(--green-light);
+            border: 2px solid var(--white);
+            color: var(--white);
+            font-weight: 600;
+          }
+        }
+      }
+      .room:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+
+     
+    }
+   
+  }
+  @media (max-width: 418px) {
+    .mainContent {
+      width: 100vw;
+      .showAllRooms {
+        display: grid;
+        grid-template-columns: 1fr;
+  
+        .room {
+          width: 85%;
+          margin-top: 40px;
+  
+          .roomInformation {
+            button {
+              width: 75vw;
+            }
+          }
+          .room:hover {
+            -webkit-transform: none;
+            transform: none;
           }
         }
       }

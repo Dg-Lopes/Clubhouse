@@ -32,7 +32,8 @@ export default function Header(): JSX.Element {
 			</header>
 			<main className={styles.mainContent}>
 				<h1>Rooms</h1>
-				<section className={styles.rooms}>
+				<div className={styles.showAllRooms}>
+
 					<div className={styles.room}>
 						<div className={styles.admInformation}>
 							<BsFillPersonFill 
@@ -43,7 +44,7 @@ export default function Header(): JSX.Element {
 						</div>
 						<div className={styles.roomInformation}>
 							<h2>Just talking</h2>
-							<p>We are just having a good conversation</p>
+							<p>We are just having a good conversation, let's go, it's nice</p>
 							<span>
 								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
 							</span>
@@ -54,6 +55,7 @@ export default function Header(): JSX.Element {
 							</Link>
 						</div>
 					</div>
+
 					<div className={styles.room}>
 						<div className={styles.admInformation}>
 							<BsFillPersonFill 
@@ -64,7 +66,7 @@ export default function Header(): JSX.Element {
 						</div>
 						<div className={styles.roomInformation}>
 							<h2>Just talking</h2>
-							<p>We are just having a good conversation</p>
+							<p>We are just having a good conversation, let's go, it's nice</p>
 							<span>
 								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
 							</span>
@@ -75,6 +77,7 @@ export default function Header(): JSX.Element {
 							</Link>
 						</div>
 					</div>
+
 					<div className={styles.room}>
 						<div className={styles.admInformation}>
 							<BsFillPersonFill 
@@ -85,7 +88,7 @@ export default function Header(): JSX.Element {
 						</div>
 						<div className={styles.roomInformation}>
 							<h2>Just talking</h2>
-							<p>We are just having a good conversation</p>
+							<p>We are just having a good conversation, let's go, it's nice</p>
 							<span>
 								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
 							</span>
@@ -96,7 +99,117 @@ export default function Header(): JSX.Element {
 							</Link>
 						</div>
 					</div>
-				</section>
+
+					<div className={styles.room}>
+						<div className={styles.admInformation}>
+							<BsFillPersonFill 
+								size={130} 
+								color="white"
+							/>
+							<h3>Eduardo</h3>
+						</div>
+						<div className={styles.roomInformation}>
+							<h2>Just talking</h2>
+							<p>We are just having a good conversation, let's go, it's nice</p>
+							<span>
+								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
+							</span>
+							<Link href="">
+								<button>
+									Enter the room
+								</button>
+							</Link>
+						</div>
+					</div>
+
+					<div className={styles.room}>
+						<div className={styles.admInformation}>
+							<BsFillPersonFill 
+								size={130} 
+								color="white"
+							/>
+							<h3>Eduardo</h3>
+						</div>
+						<div className={styles.roomInformation}>
+							<h2>Just talking</h2>
+							<p>We are just having a good conversation, let's go, it's nice</p>
+							<span>
+								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
+							</span>
+							<Link href="">
+								<button>
+									Enter the room
+								</button>
+							</Link>
+						</div>
+					</div>
+
+					<div className={styles.room}>
+						<div className={styles.admInformation}>
+							<BsFillPersonFill 
+								size={130} 
+								color="white"
+							/>
+							<h3>Eduardo</h3>
+						</div>
+						<div className={styles.roomInformation}>
+							<h2>Just talking</h2>
+							<p>We are just having a good conversation, let's go, it's nice</p>
+							<span>
+								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
+							</span>
+							<Link href="">
+								<button>
+									Enter the room
+								</button>
+							</Link>
+						</div>
+					</div>
+
+					<div className={styles.room}>
+						<div className={styles.admInformation}>
+							<BsFillPersonFill 
+								size={130} 
+								color="white"
+							/>
+							<h3>Eduardo</h3>
+						</div>
+						<div className={styles.roomInformation}>
+							<h2>Just talking</h2>
+							<p>We are just having a good conversation, let's go, it's nice</p>
+							<span>
+								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
+							</span>
+							<Link href="">
+								<button>
+									Enter the room
+								</button>
+							</Link>
+						</div>
+					</div>
+
+					<div className={styles.room}>
+						<div className={styles.admInformation}>
+							<BsFillPersonFill 
+								size={130} 
+								color="white"
+							/>
+							<h3>Eduardo</h3>
+						</div>
+						<div className={styles.roomInformation}>
+							<h2>Just talking</h2>
+							<p>We are just having a good conversation, let's go, it's nice</p>
+							<span>
+								200<BsFillPersonFill size={19}/>/03<AiOutlineMessage size={19}/>
+							</span>
+							<Link href="">
+								<button>
+									Enter the room
+								</button>
+							</Link>
+						</div>
+					</div>
+				</div>
 			</main>
 		</div>
 	);
